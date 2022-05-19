@@ -3,12 +3,12 @@
 
 #include "TestUtils.h"
 
-namespace HealthPointsTests {
-	bool testInitialization();
-	bool testArithmaticOperators();
-	bool testComparisonOperators();
-	bool testOutputOperator();
-}
+// namespace HealthPointsTests {
+// 	bool testInitialization();
+// 	bool testArithmaticOperators();
+// 	bool testComparisonOperators();
+// 	bool testOutputOperator();
+// }
 
 namespace QueueTests {
 	bool testQueueMethods();
@@ -18,10 +18,10 @@ namespace QueueTests {
 }
 
 std::function<bool()> testsList[] = {
-	HealthPointsTests::testInitialization,
-	HealthPointsTests::testArithmaticOperators,
-	HealthPointsTests::testComparisonOperators,
-	HealthPointsTests::testOutputOperator,
+	// HealthPointsTests::testInitialization,
+	// HealthPointsTests::testArithmaticOperators,
+	// HealthPointsTests::testComparisonOperators,
+	// HealthPointsTests::testOutputOperator,
 
 	QueueTests::testQueueMethods,
 	QueueTests::testModuleFunctions,

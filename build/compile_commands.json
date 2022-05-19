@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/lmwgqryp/Desktop/technion/matam/ex3/ex3/build",
+  "command": "/usr/bin/clang++    -DNDEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -o CMakeFiles/my_executable.dir/QueueExampleTests.cpp.o -c /Users/lmwgqryp/Desktop/technion/matam/ex3/ex3/QueueExampleTests.cpp",
+  "file": "/Users/lmwgqryp/Desktop/technion/matam/ex3/ex3/QueueExampleTests.cpp"
+},
+{
+  "directory": "/Users/lmwgqryp/Desktop/technion/matam/ex3/ex3/build",
+  "command": "/usr/bin/clang++    -DNDEBUG -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk -std=gnu++11 -o CMakeFiles/my_executable.dir/TestMain.cpp.o -c /Users/lmwgqryp/Desktop/technion/matam/ex3/ex3/TestMain.cpp",
+  "file": "/Users/lmwgqryp/Desktop/technion/matam/ex3/ex3/TestMain.cpp"
+}
+]
