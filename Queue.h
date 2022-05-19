@@ -23,7 +23,7 @@ private:
 
     Node *m_start;
     Node *m_end;
-    int m_size =0;
+    int m_size=0;
 
     bool empty()
     {
@@ -63,7 +63,9 @@ public:
 
 class EmptyQueue {};
 Queue():m_start(nullptr),m_end(nullptr),m_size(0){};
-~Queue() = default;
+~Queue();
+Queue(const Queue<T> &copy_from);
+// Queue<T> &operator=(const Queue<T> &copy_from);
 Iterator begin();
 ConstIterator begin() const;
 Iterator end();
@@ -80,6 +82,35 @@ void transform(Queue<T> oldQueue,operation func);
 };
 
 // Queue functions
+template<class T>
+Queue<T>::~Queue()
+{
+    while(m_size>0)
+    {
+        this->popFront();
+    }
+}
+
+template<class T>
+Queue<T>::Queue(const Queue<T> &copy_from)
+{
+    m_start = nullptr;
+    for(typename Queue<T>::ConstIterator iter = copy_from.begin(); iter != copy_from.end(); ++iter)
+    {
+        pushBack(*(iter));
+    }
+
+}
+
+// template<class T>
+// Queue<T>& Queue<T>::operator=(const Queue<T> &copy_from)
+// {
+//     if(&copy_from==this)
+//     {
+//         return *this;
+//     }
+
+// }
 
 template<class T>
 typename Queue<T>::Iterator Queue<T>::begin()
